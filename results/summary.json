@@ -1,0 +1,55 @@
+{
+  "scope": "prescribed-phase source + exact linear KG field, no feedback/bonds",
+  "n": 64,
+  "burn": 1100,
+  "record": 2500,
+  "probe_offsets": [
+    5,
+    10,
+    16,
+    24
+  ],
+  "analytic_identity_max_error": 1.2947976024690888e-13,
+  "single_monomer": {
+    "crest_factor": 1.416502574806951,
+    "duty_fraction_above_80pct_peak": 0.4078,
+    "peak": 1.0,
+    "rms": 0.7059641244466397
+  },
+  "complementary_pair": {
+    "crest_factor": 2.002434287520718,
+    "duty_fraction_above_80pct_peak": 0.1324,
+    "peak": 2.0,
+    "rms": 0.9987843358776423
+  },
+  "source_ratio_pair_over_single_crest": 1.4136467685514944,
+  "field_amplitude_A_by_distance": [
+    0.014230107453912224,
+    0.003138014792366837,
+    0.0005667783059037027,
+    6.380449923423807e-05
+  ],
+  "field_amplitude_T_by_distance": [
+    0.02729423382892564,
+    0.009323488790008471,
+    0.002870662362680816,
+    0.0006824568161835223
+  ],
+  "field_two_tone_modulation_contrast": [
+    0.6853863066477383,
+    0.5036334133555165,
+    0.3297676152397957,
+    0.17099774011070112
+  ],
+  "phase_state_field_difference_rms": [
+    0.03082190671092392,
+    0.009851970492204803,
+    0.0029307467348973068,
+    0.0006866920265264397
+  ],
+  "field_source_scaling_max_error": 0.0,
+  "envelope_signed_period": 157.07963267948966,
+  "envelope_absolute_peak_interval": 78.53981633974483,
+  "pump_carrier_period": 89.7597901025655,
+  "interpretation": "beats exist for any two coherent tones; source identity alone gives no active spike threshold or regeneration"
+}
