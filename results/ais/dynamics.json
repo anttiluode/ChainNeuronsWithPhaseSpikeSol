@@ -1,0 +1,329 @@
+{
+  "scope": "added excitable FHN units with fixed phase gate OFF in this control; no structural movements or bonded mechanics",
+  "settings": {
+    "n": 48,
+    "pairs": 5,
+    "x": 24,
+    "y0": 17.0,
+    "pair_spacing": 5.0,
+    "bead_separation": 2.8,
+    "g_emit": 0.085,
+    "source_x": 17,
+    "g_phase": 0.02,
+    "noise": 0.0,
+    "input_gain": 0.1,
+    "dt_fhn": 0.1,
+    "fhn_epsilon": 0.05,
+    "envelope_tau": 18.0,
+    "sensor_gain": 12.0,
+    "emission_gain": 0.13,
+    "plastic_rate": 0.002,
+    "recovery_rate": 0.001,
+    "seed": 17,
+    "phase_init_mode": "fixed"
+  },
+  "gain_left": [
+    2.4,
+    2.1505193424740723,
+    1.491853709320872,
+    1.14648549495556,
+    1.032639719503947
+  ],
+  "gain_left_after_hold": [
+    2.4,
+    2.318801095565092,
+    1.6026773694041336,
+    1.2115096809044619,
+    1.0894290744775876
+  ],
+  "gain_after_reversed_training": [
+    1.7208892945794094,
+    1.7275712190769157,
+    1.6904996059364867,
+    2.0477642037666612,
+    2.3885652420841987
+  ],
+  "null_events": [],
+  "strength_sweep": [
+    {
+      "amplitude": 0,
+      "site0_spikes": 0,
+      "site1_spikes": 0,
+      "peak_site0": -1.1075269359108244,
+      "downstream_wave_rms": 0.04340490935222563
+    },
+    {
+      "amplitude": 0.004,
+      "site0_spikes": 0,
+      "site1_spikes": 0,
+      "peak_site0": -1.0713076553253684,
+      "downstream_wave_rms": 0.04341123823704641
+    },
+    {
+      "amplitude": 0.008,
+      "site0_spikes": 0,
+      "site1_spikes": 0,
+      "peak_site0": -1.0204688047633104,
+      "downstream_wave_rms": 0.04341752049228873
+    },
+    {
+      "amplitude": 0.012,
+      "site0_spikes": 0,
+      "site1_spikes": 0,
+      "peak_site0": -0.9466269401148089,
+      "downstream_wave_rms": 0.04342375649362166
+    },
+    {
+      "amplitude": 0.018,
+      "site0_spikes": 0,
+      "site1_spikes": 0,
+      "peak_site0": -0.6297688884472407,
+      "downstream_wave_rms": 0.04343302458346242
+    },
+    {
+      "amplitude": 0.025,
+      "site0_spikes": 1,
+      "site1_spikes": 1,
+      "peak_site0": 1.8660610138723228,
+      "downstream_wave_rms": 0.049891218270719746
+    },
+    {
+      "amplitude": 0.035,
+      "site0_spikes": 1,
+      "site1_spikes": 1,
+      "peak_site0": 1.907350021559555,
+      "downstream_wave_rms": 0.0483288916163757
+    },
+    {
+      "amplitude": 0.05,
+      "site0_spikes": 1,
+      "site1_spikes": 1,
+      "peak_site0": 1.9531505601419636,
+      "downstream_wave_rms": 0.0497891147305202
+    },
+    {
+      "amplitude": 0.075,
+      "site0_spikes": 1,
+      "site1_spikes": 1,
+      "peak_site0": 1.9997716263130696,
+      "downstream_wave_rms": 0.05581004260961813
+    },
+    {
+      "amplitude": 0.1,
+      "site0_spikes": 1,
+      "site1_spikes": 1,
+      "peak_site0": 2.0199878928672255,
+      "downstream_wave_rms": 0.05269720451500276
+    }
+  ],
+  "paired_pulses": {
+    "20": {
+      "first": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "during_gap": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reset_fast_recovery_second": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "events": [
+        [
+          2022,
+          0
+        ],
+        [
+          2033,
+          1
+        ]
+      ]
+    },
+    "50": {
+      "first": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "during_gap": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reset_fast_recovery_second": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "events": [
+        [
+          2022,
+          0
+        ],
+        [
+          2033,
+          1
+        ]
+      ]
+    },
+    "120": {
+      "first": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "during_gap": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reset_fast_recovery_second": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "events": [
+        [
+          2022,
+          0
+        ],
+        [
+          2033,
+          1
+        ]
+      ]
+    },
+    "250": {
+      "first": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "during_gap": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "second": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reset_fast_recovery_second": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "events": [
+        [
+          2022,
+          0
+        ],
+        [
+          2033,
+          1
+        ]
+      ]
+    },
+    "450": {
+      "first": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "during_gap": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "second": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "reset_fast_recovery_second": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "events": [
+        [
+          2022,
+          0
+        ],
+        [
+          2033,
+          1
+        ],
+        [
+          2669,
+          0
+        ],
+        [
+          2691,
+          1
+        ]
+      ]
+    }
+  }
+}

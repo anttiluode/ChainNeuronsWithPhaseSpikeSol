@@ -6,3 +6,5 @@ results/regeneration/traces.npz
 results/regeneration/traces.svg
 results/regeneration/traces.png
 results/regeneration_smoke/
+results/ais/figure.png
+results/ais_quick/

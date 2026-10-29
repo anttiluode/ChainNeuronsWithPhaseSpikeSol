@@ -130,3 +130,15 @@ python plot_regeneration.py
 Saved evidence: [`summary.json`](results/regeneration/summary.json), [`seed_sweep.json`](results/regeneration/seed_sweep.json), [`seed_sweep_default_noise.json`](results/regeneration/seed_sweep_default_noise.json), [`gain_sweep.json`](results/regeneration/gain_sweep.json). Raw time-series traces are regenerable but intentionally not versioned.
 
 **Next physical gate:** put movable, *bonded* chains back into the original `World`, test three or more hops, vary distances and locations, and require an input-conditioned pulse with restoring amplitude or reliable decision threshold across independently noisy trials. Only then revisit reversible synapses and phase-dependent bond formation.
+
+---
+
+## New: AIS-inspired adaptive firing-region experiment (29 October 2026)
+
+![Adaptable firing region, threshold and refractory behavior](results/ais/figure.svg)
+
+**Outcome: partial success, with a strict physical boundary.** An explicitly **added** fast-excitation/slow-recovery controller and a localized activity-dependent gain give a stationary five-pair synthetic oscillator chain a stable, movable firing region. Opposite stimulation histories produce opposite site-gain profiles; after grafting these gains into a **common identical phase/field/fast state**, a weak probe selectively fires the trained region. The engineered controller also produces a nonlinear activation threshold and a refractory-like recovery interval.
+
+**But the full phase-addressing hypothesis is not yet reliable:** after matching all variables except stored phase, two histories changed later spike counts in only **1/6** independent noisy preparations, and failed to differ in the longer standard run. The phase gate is an **explicitly written new rule**, not a self-organized detector. The local input sensor uses privileged per-source field attribution; the synthetic chain is pinned and **unbonded**. Therefore this is a mechanistic *proof of feasibility*, not evidence that spontaneous chain neurons were discovered in the parent model.
+
+Read [the full mechanism and falsification ledger](AIS_EXPERIMENT.md). Code: [`ais_chain_experiment.py`](ais_chain_experiment.py), [`ais_gate_study.py`](ais_gate_study.py), [`ais_dynamics_checks.py`](ais_dynamics_checks.py), [`ais_holdout.py`](ais_holdout.py). Saved reproducible evidence: [`results/ais/`](results/ais/). Run the main scripts from the repository root after `pip install -r requirements.txt`.

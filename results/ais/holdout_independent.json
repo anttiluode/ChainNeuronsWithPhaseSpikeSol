@@ -1,0 +1,288 @@
+{
+  "scope": "holdout independent phase preparations; no per-seed tuning",
+  "noise": 0.003,
+  "seeds": [
+    {
+      "left_selective": true,
+      "right_selective": true,
+      "phase_history_changes_spike_pattern": true,
+      "gate_ablation_makes_history_invariant": true,
+      "phase_spikes": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "ablated_spikes": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "seed": 201,
+      "phase_sep": [
+        0.5173550581901198,
+        0.3418608695974401,
+        0.26798339558963846,
+        0.2273492963188204,
+        0.13988647628907813
+      ]
+    },
+    {
+      "left_selective": true,
+      "right_selective": true,
+      "phase_history_changes_spike_pattern": false,
+      "gate_ablation_makes_history_invariant": true,
+      "phase_spikes": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "ablated_spikes": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "seed": 202,
+      "phase_sep": [
+        0.2758348164867499,
+        0.20706898188522915,
+        0.1531575177536557,
+        0.08714992748319617,
+        0.015914936268558222
+      ]
+    },
+    {
+      "left_selective": true,
+      "right_selective": true,
+      "phase_history_changes_spike_pattern": false,
+      "gate_ablation_makes_history_invariant": true,
+      "phase_spikes": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "ablated_spikes": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "seed": 203,
+      "phase_sep": [
+        0.9437916042757737,
+        0.5104259732459018,
+        0.711919502369156,
+        0.9953763923104051,
+        0.021604895061585694
+      ]
+    },
+    {
+      "left_selective": true,
+      "right_selective": true,
+      "phase_history_changes_spike_pattern": false,
+      "gate_ablation_makes_history_invariant": true,
+      "phase_spikes": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "ablated_spikes": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "seed": 204,
+      "phase_sep": [
+        1.3352504523247148,
+        0.11879817630951095,
+        0.2606079124885237,
+        0.23545756884249117,
+        0.16391249743520575
+      ]
+    },
+    {
+      "left_selective": true,
+      "right_selective": true,
+      "phase_history_changes_spike_pattern": false,
+      "gate_ablation_makes_history_invariant": true,
+      "phase_spikes": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "ablated_spikes": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "seed": 205,
+      "phase_sep": [
+        0.6795394402848418,
+        0.39204312640134753,
+        0.2583938740541072,
+        0.18003959140997902,
+        0.09892312954288962
+      ]
+    },
+    {
+      "left_selective": true,
+      "right_selective": true,
+      "phase_history_changes_spike_pattern": false,
+      "gate_ablation_makes_history_invariant": true,
+      "phase_spikes": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "ablated_spikes": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "seed": 206,
+      "phase_sep": [
+        0.8418716333287224,
+        0.45346422602079905,
+        0.25449454438455676,
+        0.1722804592757683,
+        0.14377304298825774
+      ]
+    }
+  ],
+  "counts": {
+    "left_selective": 6,
+    "right_selective": 6,
+    "phase_history_changes_spike_pattern": 1,
+    "gate_ablation_makes_history_invariant": 6
+  }
+}
