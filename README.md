@@ -13,6 +13,8 @@ cos(theta_A) + cos(theta_T)
 
 So a phase memory shifts a deterministic beat envelope. But **an amplitude beat is not yet a neuronal spike**: it does not by itself establish a threshold, refractory period, regenerative pulse or transmission to a downstream assembly. Any two prescribed tones produce beats, even without a pump or bonds. The pump's value would be to make the phases *writable and persistent*; that was investigated in the parent physics repo, not proved here.
 
+![Measured two-tone contrast with distance](results/contrast.svg)
+
 ## Independent source-and-field test
 
 `phase_spike_sol.py` uses the exact discrete Klein–Gordon field stencil of `chains/world.py` (`c²=0.3`, `m²=0.02`, `gamma=0.01`), the same 5×5 normalized source kernels, and prescribed equal-strength A/T emissions. Two beads are separated by 3.6 cells perpendicular to the probe axis so neither frequency receives a distance advantage. It reads fields at offsets 5, 10, 16, 24 after a 1100-step transient. Joint two-frequency least squares separates A and T rather than confusing beats with sidebands.
