@@ -59,3 +59,74 @@ Keep a single-frequency emitter, unbonded same-geometry pair, emission-matched b
 ## Next, when Claude and Sol compare
 
 Sol is auditing **signal formation and transport**; Claude is exploring **self-organized phase spikes**. The falsifiable handoff is whether a receiver at 10–25 cells responds more selectively or robustly to a *full interacting chain* than to the exactly matched passive beat emitter calculated here. If the answer is yes, locate the nonlinear amplification/relay mechanism. If not, the phase memory is still valuable without calling it a spike.
+
+---
+
+## Follow-up: two assemblies, active re-emission, and a history-dependent second response (29 Oct 2026)
+
+![Controlled two-assembly signal transfer and robustness](results/regeneration/summary.svg)
+
+**Finding:** In a declared *stationary* four-monomer version of the parent's wave and pumped-phase dynamics, the receiving A/T pair responds to a phase-coded source, changes its internal phase, and actively re-emits part of the coded signal. Its phase history also causes a small but reproducible difference in its *incremental response to a later, identical probe*, after all field slices are forced identical. This is **not a biological spike, threshold, autonomous learning, or bonded chain**. The emitter remains externally timed; the two spatial pairs are unbonded and held still, so neither bond formation nor moving-chain mechanics has been tested.
+
+`receiver_regeneration.py` uses the parent's five-point Klein–Gordon update (`c²=0.3, m²=0.02, γ=0.01`), source stencil and actual receiver-mode phase equation
+
+```
+θ_i ← θ_i + ω_i − g_phase*cos(2Ωt)*hear_i*sin(θ_i)/ω_i + noise
+```
+
+with pump `Ω=0.07`, `g_phase=0.02`, frequency A/T `0.03/0.11`, and stationary 2-bead sender and receiver pairs at x=9 and x=18 on a 48² torus. A downstream probe is at x=27. The two source frequencies have equal emission amplitude. Separate but linearly superposable KG fields attribute the sender and receiver emissions, and exactly subtract each bead's own KG field from its input. The parent uses a fitted steady-state self-subtraction instead; this is a **slightly different, explicitly declared intervention**, not bit-for-bit reproduction of `World.step()`.
+
+### Protocol
+
+1. **First encounter (1,100 steps):** source transmits the same two frequencies with relative offset D=0 or π. Both arms start with identical receiver phases, position and random-noise stream.
+2. **Silent hold (1,200 steps):** source emission is switched off, but the receiver, the pump and the rest of the field physics continue running. This is powered retention, not battery-free storage.
+3. **Match the present:** zero *all* KG source fields and their previous time slices. Keep the two receiver phases intact; source clocks are made identical across arms.
+4. **Second encounter (750 steps):** both histories receive an identical *weak* probe (¼ nominal sender amplitude). Also run a no-probe twin for *each* history. Subtract to measure the history-conditioned **incremental response**, not just differing spontaneous emission.
+5. **Causal controls:** disable receiver phase feedback (passive pair) and repeat the matched-present protocol after explicitly resetting the receiver phases. Both must remove the past-history effect.
+
+### One reproducible initial state (zero phase noise)
+
+| Measurement | Result |
+|---|---:|
+| Difference in receiver's phase register immediately after write | 1.254 rad |
+| Retained phase separation after silent hold | 0.851 rad |
+| RMS far-field coded difference in direct sender component, during writing | 0.002267 |
+| RMS far-field coded difference in receiving pair's **emission**, during writing | 0.003851 |
+| Receiver / direct sender coded contrast at that same downstream location | **1.699×** |
+| Difference in later receiver-only emissions after matching the entire field | 0.004332 RMS |
+| Difference in **incremental response** to the identical later probe | 0.000190 RMS |
+| Both late-history differences, with phase feedback disabled | **exact zero** |
+| Both late-history differences, with receiver phases reset | **exact zero** |
+
+The incremental-response change is **small** compared with the receiver's ordinary ~0.009 field RMS at that far probe. The 1.699× is a *differential coded-signal amplitude ratio*, **not** energy gain, arbitrary-bit decoding fidelity, or restoration to a standard spike height. Amplification is powered by the receiver's own continuous emissions; it is not a propagation theorem.
+
+### Robustness: independent phase preparations and noise
+
+Eight preselected receiver phase preparations, matched-noise counterfactual arms, shared default geometry:
+
+| Phase noise per step | Receiver's coded signal exceeded direct source | Median differential gain | Median retained register separation | Median difference in second-probe incremental response |
+|---|---|---|---|---|
+| `0.003` | **5/8** | **1.233×** (0.365–1.631) | 0.664 rad | 0.000160 RMS |
+| `0.010` (parent default) | **6/8** | **1.210×** (0.522–1.615) | 0.681 rad | 0.000162 RMS |
+
+Retained phase separation exceeded 0.1 rad in **8/8** tested preparations in both sweeps. These are *paired-trajectory causal contrasts with shared noise*, not an estimate of practical bit fidelity under unknown starting phases or independent noise. Eight examples are too few for a reliable success probability. **In some starts the receiving pair makes the coded contrast weaker, not stronger.**
+
+### A direct attempt to find an all-or-none spike
+
+With one fixed preparation, scanning nominal source amplitude from `0` to `1` (`gain_sweep.py`) produces a smooth rising receiver bit-contrast curve: at 0.1 input it is `0.000451`, at 0.4 it is `0.001717`, at 1.0 it is `0.003851` RMS. No abrupt activation threshold was observed in this scan. This supports **continuous nonlinear re-emission**, not a regenerative action potential. We did not measure a refractory period or multi-hop propagation.
+
+### Run it yourself
+
+```bash
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python receiver_regeneration.py --out results/regeneration
+python seed_sweep.py --seeds 8 --noise 0.003 --out results/regeneration/seed_sweep.json
+python seed_sweep.py --seeds 8 --noise 0.01 --out results/regeneration/seed_sweep_default_noise.json
+python gain_sweep.py
+python plot_regeneration.py
+```
+
+Saved evidence: [`summary.json`](results/regeneration/summary.json), [`seed_sweep.json`](results/regeneration/seed_sweep.json), [`seed_sweep_default_noise.json`](results/regeneration/seed_sweep_default_noise.json), [`gain_sweep.json`](results/regeneration/gain_sweep.json). Raw time-series traces are regenerable but intentionally not versioned.
+
+**Next physical gate:** put movable, *bonded* chains back into the original `World`, test three or more hops, vary distances and locations, and require an input-conditioned pulse with restoring amplitude or reliable decision threshold across independently noisy trials. Only then revisit reversible synapses and phase-dependent bond formation.

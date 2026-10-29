@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .venv/
 results/audit.png
+results/regeneration/traces.npz
+results/regeneration/traces.svg
+results/regeneration/traces.png
+results/regeneration_smoke/

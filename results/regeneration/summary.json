@@ -1,0 +1,160 @@
+{
+  "scope": "pinned independent A/T pairs; same KG stencil and receiver phase law; driven sender; no Brownian/ligation/bonds",
+  "settings": {
+    "n": 48,
+    "source_x": 9.0,
+    "receiver_x": 18.0,
+    "y": 24.0,
+    "separation": 3.6,
+    "far_x": 27,
+    "gain": 0.1,
+    "g_phase": 0.02,
+    "phase_noise": 0.0,
+    "seed": 42,
+    "write_steps": 1100,
+    "hold_steps": 1200,
+    "probe_steps": 750,
+    "write_record": 450
+  },
+  "results": {
+    "passive": {
+      "write_phase_separation": 0.0,
+      "retained_phase_separation": 0.0,
+      "post_probe_phase_separation": 0.0,
+      "late_receiver_trace_rms_difference": 0.0,
+      "second_probe_conditional_response_rms_difference": 0.0,
+      "second_probe_response_rms_history0": 0.0,
+      "second_probe_response_rms_history1": 0.0,
+      "write_direct_sender_bit_contrast_rms": 0.002267069811163241,
+      "write_receiver_bit_contrast_rms": 0.0,
+      "write_total_bit_contrast_rms": 0.002267069811163241,
+      "write_receiver_to_direct_contrast_ratio": 0.0,
+      "probe": {
+        "history0": {
+          "sender": {
+            "A_magnitude": 7.182905350370359e-05,
+            "T_magnitude": 0.0005304652773648948,
+            "A_phase": 0.1567850677655748,
+            "T_phase": -0.32935794361421433,
+            "rms": 0.0007062564209995291,
+            "contrast": 0.23851811256504896
+          },
+          "receiver": {
+            "A_magnitude": 0.003923521396043498,
+            "T_magnitude": 0.011180933937004717,
+            "A_phase": 0.39239814838180337,
+            "T_phase": -0.7881349630020154,
+            "rms": 0.00968040433777405,
+            "contrast": 0.519518421489707
+          },
+          "total": {
+            "A_magnitude": 0.003993401116627918,
+            "T_magnitude": 0.01165891326755951,
+            "A_phase": 0.38819928042093366,
+            "T_phase": -0.7679844172366195,
+            "rms": 0.01005669755104632,
+            "contrast": 0.5102633410765384
+          }
+        },
+        "history1": {
+          "sender": {
+            "A_magnitude": 7.182905350370359e-05,
+            "T_magnitude": 0.0005304652773648948,
+            "A_phase": 0.1567850677655748,
+            "T_phase": -0.32935794361421433,
+            "rms": 0.0007062564209995291,
+            "contrast": 0.23851811256504896
+          },
+          "receiver": {
+            "A_magnitude": 0.003923521396043498,
+            "T_magnitude": 0.011180933937004717,
+            "A_phase": 0.39239814838180337,
+            "T_phase": -0.7881349630020154,
+            "rms": 0.00968040433777405,
+            "contrast": 0.519518421489707
+          },
+          "total": {
+            "A_magnitude": 0.003993401116627918,
+            "T_magnitude": 0.01165891326755951,
+            "A_phase": 0.38819928042093366,
+            "T_phase": -0.7679844172366195,
+            "rms": 0.01005669755104632,
+            "contrast": 0.5102633410765384
+          }
+        }
+      }
+    },
+    "active": {
+      "write_phase_separation": 1.2540629649321886,
+      "retained_phase_separation": 0.8507432798673448,
+      "post_probe_phase_separation": 0.8145109964895028,
+      "late_receiver_trace_rms_difference": 0.004332228136209498,
+      "second_probe_conditional_response_rms_difference": 0.00019007217015240327,
+      "second_probe_response_rms_history0": 0.00010210589455191418,
+      "second_probe_response_rms_history1": 0.00022704229224587298,
+      "write_direct_sender_bit_contrast_rms": 0.002267069811163241,
+      "write_receiver_bit_contrast_rms": 0.0038514081904000813,
+      "write_total_bit_contrast_rms": 0.005885783427426375,
+      "write_receiver_to_direct_contrast_ratio": 1.6988485186629125,
+      "probe": {
+        "history0": {
+          "sender": {
+            "A_magnitude": 7.182905350370359e-05,
+            "T_magnitude": 0.0005304652773648948,
+            "A_phase": 0.1567850677655748,
+            "T_phase": -0.32935794361421433,
+            "rms": 0.0007062564209995291,
+            "contrast": 0.23851811256504896
+          },
+          "receiver": {
+            "A_magnitude": 0.0039030458416433253,
+            "T_magnitude": 0.01118422964766518,
+            "A_phase": 0.3035886808279686,
+            "T_phase": -0.3382391747054403,
+            "rms": 0.009368284351596817,
+            "contrast": 0.5173957146085377
+          },
+          "total": {
+            "A_magnitude": 0.003974116168795114,
+            "T_magnitude": 0.01171467495190988,
+            "A_phase": 0.3009448371157463,
+            "T_phase": -0.33783701903938235,
+            "rms": 0.009747190993556613,
+            "contrast": 0.5066185327115926
+          }
+        },
+        "history1": {
+          "sender": {
+            "A_magnitude": 7.182905350370359e-05,
+            "T_magnitude": 0.0005304652773648948,
+            "A_phase": 0.1567850677655748,
+            "T_phase": -0.32935794361421433,
+            "rms": 0.0007062564209995291,
+            "contrast": 0.23851811256504896
+          },
+          "receiver": {
+            "A_magnitude": 0.004056861750971374,
+            "T_magnitude": 0.011285884239252484,
+            "A_phase": 0.8154092825236715,
+            "T_phase": -0.8216053290439188,
+            "rms": 0.009660130193563574,
+            "contrast": 0.5288312474906823
+          },
+          "total": {
+            "A_magnitude": 0.004113901575337823,
+            "T_magnitude": 0.011756042400690617,
+            "A_phase": 0.804722996202554,
+            "T_phase": -0.8002783432950781,
+            "rms": 0.010016094486239302,
+            "contrast": 0.518451934241466
+          }
+        }
+      }
+    },
+    "ablated": {
+      "late_receiver_trace_rms_difference": 0.0,
+      "second_probe_conditional_response_rms_difference": 0.0,
+      "post_probe_phase_separation": 0.0
+    }
+  }
+}

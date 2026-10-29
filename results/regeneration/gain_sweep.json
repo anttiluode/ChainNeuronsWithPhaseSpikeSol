@@ -1,0 +1,53 @@
+{
+  "scope": "stationary two-pair KG+phase law, no imposed threshold/refractory; one initial phase configuration",
+  "rows": [
+    {
+      "gain": 0.0,
+      "sender_bit_rms_far": 0.0,
+      "receiver_bit_rms_far": 0.0,
+      "relative_phase_separation": 0.0
+    },
+    {
+      "gain": 0.025,
+      "sender_bit_rms_far": 5.6676745279081034e-05,
+      "receiver_bit_rms_far": 0.00011396393278426665,
+      "relative_phase_separation": 0.038288017460686774
+    },
+    {
+      "gain": 0.05,
+      "sender_bit_rms_far": 0.00011335349055816207,
+      "receiver_bit_rms_far": 0.00022708096999004288,
+      "relative_phase_separation": 0.0762147916186533
+    },
+    {
+      "gain": 0.1,
+      "sender_bit_rms_far": 0.00022670698111632414,
+      "receiver_bit_rms_far": 0.0004507258632367782,
+      "relative_phase_separation": 0.15097873316184973
+    },
+    {
+      "gain": 0.2,
+      "sender_bit_rms_far": 0.0004534139622326483,
+      "receiver_bit_rms_far": 0.0008873741349983704,
+      "relative_phase_separation": 0.29612178113036663
+    },
+    {
+      "gain": 0.4,
+      "sender_bit_rms_far": 0.0009068279244652965,
+      "receiver_bit_rms_far": 0.0017165930962912983,
+      "relative_phase_separation": 0.5688573514774762
+    },
+    {
+      "gain": 0.8,
+      "sender_bit_rms_far": 0.001813655848930593,
+      "receiver_bit_rms_far": 0.0031967114503418503,
+      "relative_phase_separation": 1.0465505646613735
+    },
+    {
+      "gain": 1.0,
+      "sender_bit_rms_far": 0.002267069811163241,
+      "receiver_bit_rms_far": 0.0038514081904000813,
+      "relative_phase_separation": 1.2540629649321886
+    }
+  ]
+}
